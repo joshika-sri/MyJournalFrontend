@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import "tailwindcss";
+.delius-regular {
+  font-family: "Delius", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+font-style: normal;
+  font-family: "Delius", cursive;
+}
+.bg-pink-pattern {
+  --color: #faa7d8;
+  background: linear-gradient(45deg, var(--color) 25%, transparent 25%) -50px 0,
+    linear-gradient(-45deg, var(--color) 25%, transparent 25%) -50px 0,
+    linear-gradient(45deg, transparent 75%, var(--color) 75%) -50px 0,
+    linear-gradient(-45deg, transparent 75%, var(--color) 75%) -50px 0;
+  background-color: #e5e5f7;
+  background-size: 10px 40px;
+}
+.bg-purple-pattern {
+  --color: #a748f5;
+  background: linear-gradient(95deg, var(--color) 25%, transparent 25%) -50px 0,
+    linear-gradient(-15deg, var(--color) 25%, transparent 25%) -50px 0,
+    linear-gradient(25deg, transparent 75%, var(--color) 75%) -50px 0,
+    linear-gradient(-45deg, transparent 75%, var(--color) 75%) -50px 0,
+    linear-gradient(-15deg, transparent 75%, var(--color) 75%) -50px 0;
+  background-color: #b669fd;
+  background-size: 40px 40px;
+}
+.bg-radial-pink-circles {
+  background-image: radial-gradient(
+      circle at 52% 48%,
+      #ffebf5 10%,
+      transparent 15%
+    ),
+    radial-gradient(circle at 50% 50%, #ffbcdd 20%, transparent 20%),
+    radial-gradient(circle at 40% 40%, #ff0080 20%, transparent 21%),
+    radial-gradient(circle at 60% 60%, #ff1288 20%, transparent 21%),
+    radial-gradient(circle at 60% 40%, #ff2c96 20%, transparent 21%),
+    radial-gradient(circle at 40% 60%, #ff44a1 20%, transparent 21%);
+  background-size: 100px 100px;
+  background-position: center;
+}
+.bg-blue-yellow-grid {
+  --color1: rgb(108, 231, 221);
+  --color2: rgb(250, 255, 178);
+  background-color: var(--color1);
+  background-image: linear-gradient(45deg, var(--color2) 25%, transparent 25%, transparent 75%, var(--color2) 75%, var(--color2)), 
+                    linear-gradient(45deg, var(--color2) 25%, var(--color1) 25%, var(--color1) 75%, var(--color2) 75%, var(--color2));
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+}
+.bg-futuristic-pattern {
+  background: linear-gradient(
+    145deg,
+    rgba(59, 43, 124, 0.9),
+    rgba(106, 76, 169, 0.9),
+    rgba(155, 108, 214, 0.9)
+  );
+}
+.bg-grey-grid {
+  --color: #E1E1E1;
+  background-color: #F3F3F3;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
+}
